@@ -8,14 +8,22 @@
     <title>HTML &lt;hr&gt; tag</title>
 </head>
 
+<script>
+    function download_file() {
+      document.getElementById("v1.0.0 installer").click()
+    }
+</script>
+
 <body>
     <h1>MillerLabsDSP Plug-in Installers</h1>
     <p>
         MLOD-1 Digital Overdrive<br><br>
         v1.0.0<br><br>
         Mac (AU/VST3):<br>
-        <button onclick="window.location.href='/Users/zacharymiller/PluginPackages/MLOD1DigitalOverdrive/build/MLOD1DigitalOverdriveMacInstaller.pkg';">Download</button>
-<br>
+        <a id="v1.0.0 installer" href="/Users/zacharymiller/PluginPackages/MLOD1DigitalOverdrive/build/" download="MLOD1DigitalOverdriveMacInstaller.pkg" style="display:none;"></a>
+
+        <button onClick="download_file()">Download!!!</button>
+ <br>
     </p>
     <hr>
 </body>
